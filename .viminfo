@@ -8,153 +8,160 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/use_metr
+~MSle0~/textarea
 
 # Last Substitute Search Pattern:
-~MSle0&>
+~MSle0&$pagetype
 
 # Last Substitute String:
-$
+$$page_type
 
 # Command Line History (newest to oldest):
-:q
 :w
-:Ack
+:q
 :q!
-:make
-:e ../../js/devpanel.js
-:sp
-:e libraries/MY_Controller.php
-:e ../../css/devpanel.css
-:vsp
-:e models/devpanel.php
-:e models/region.php
 :Q
-:ws
+:Ack to_message
+:Ack base64
+:Ack
+:ack
+:e models/confirm.php
+:e libraries/MY_Controller.php
+:e models/reportad.php
+:make
 :W
-:e libraries/Session.php
-:%s/>/>/g
-:%s/as://g
-:w ~/zedo.log
-:%! uniq
-:sort
-:%s/,//g
-:%s/comZ/com,Z/g
-:%s/revinet.com/adperfect.com
-:mak
-:e common/header.php
-:e ../../../../js/admin/scrape.js
-:rela
-:e ../../views/admin/scrape.php
-:e ../../models/admin/scrape_model.php
-:e
-:e models/messages_model.php
-:csp
-:e! generate-messages.pl
-:e generate-messages.pl
-:e models/
-:e ../../../../css/
-:e chrome/
-:e chrome/content/ff-sidebar.xul
-:help vcscommand
-:e chrome/content/revify.js
-:e chrome/content/11
-:e 11
-:e ~/Downloads/test_suite/simple2.html
-:e ~/Documents/Boston-com-24-07-2010-Malicious_Ad_Analysis.pages/
-:VCSVimDiff 1270
-:e controllers/
-:mka
-:syntax on
-:558,574s/element_with_indicator/element
+:%s/$pagetype/$page_type/gc
+:%s/$pagetype/$page_type/g
+:%s/pagetype/page_type/g
+:%s/$page_template/$pagetype/g
+:e ../libraries/GMap.php
+:e models/adslist.php
+:e models/categories.php
+:e models/advancedsearch.php
+:e models/ad.php
+:e models/category.php
+:%s/show_map_/add_markers_to_map_
+:e models/comments.php
+:w! ~/coords.sql
+:w ~/coords.sql
+:e coords.sql\!
+:%s/$/' WHERE latitude IS NULL and longitude IS NULL limit 1;
+:%s/,/', longitude = '
+:%s/^/UPDATE adinformation SET latitude = '
+:e search.php
+:e moduletemplate.phpse
+:e ../../libraries/GMap.php
+:e ../../libraries/
+:e models/moduletemplate.php
+:.cc
+:Ack get_ad_url
+:ack get_ad_url
+:vsp
+:Ack load_ad_template
+:e models/newads.php
+:sp
+:e models/topads.php
+:%s/></></g
+:VCSLog
+:VCSReview
+:VCSVimLog
+:vcsreview
+:e models/createprofile.php
 
 # Search String History (newest to oldest):
-?/use_metr
-? \<get_geodata_from_ip\>
-?/bind
-?/defscr
-?/LEF
-?/fun
-?/Pab
-?/th
-?/#
-?/S
-?/key
-?/ley
-??tabl
-?/de
+?/textarea
+?/form_open
+?/input
 ?/js
-?/sty
-?/ba
-?/devp
-?/rr
-?/2.20
-?/my_conf
-?/ap_ad_featured
-?/feat
-?/split
-? ^\d\{3}Ã¿
-? \<curl_init\>
-?/level
-?/date
-?/fire
-?/6.76
-?/=
-?/mysql
-?/mysq
-?/Listen
-?/mod_uniq
-?/80
-? \<validateForm\>
-?/redirect
-? \<showInput\>
-? >
-? as:
-?/vbell
-?/URL
-?/)
-? ,
-? comZ
-? \<selectedPublisher\>
-? \<RESOURCE\>
-?/RESOURCE
-??C
+?/map2
+?/logout
+?/logout.js
+?/logoutte
+?/adslist
+?/jquer
+?/.js
+?/to_m
+?/from
+?/subject
+?/from_in
+?/Detail
+?/print
+? \<add_markers_to_map\>
+? \<get_searched_ad_ids\>
+?/marker
+?/address
+?/oomLevel
+? \<addMarkerByCoords\>
+?/get_searched
+?/side\x
+? \<add_user_to_map\>
+?/adtempl
+? $pagetype
+?/$pagety
+?/page_type
+?/pagetype
+? $page_template
+?/add_mark
+?/add_markers
+??400
+?/info_window
+?/infowindow
+?/safe_
+?/tool
+? \<save\>
+? \<cache_key\>
+?/cache
+?/\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/
+?/adid
+? \<get_icon_url\>
+??get
+?/categ
+?/htt
+?/ht
+?/print_
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@models/*
+@load_ad_template 
 @*
+@Grep
+@if 
+@Cat
 @/height
 @controllers/reports.php
 @width 
 @%
 @.
+@ 
 
 # Input Line History (newest to oldest):
 
 # Registers:
 "0	LINE	0
-	    border-bottom: 1px solid #990000;
+	        $this->add_js_file('/js/jquery/jquery-ui.min.js');
 ""1	LINE	0
-	cd /Users/ivankruchkoff/Database; mysqldump -h 192.168.1.201 -P 3306 -p'abcd' -u wp webpres > webpres-local_`date +'%Y_%m_%d'`.sql
+	lwp-request -C test_administrator:password 'http://devik.publishers.revinet.com/api/revify/1.0/test?id=ls /Volumes/APsan/Websites/'
 "2	LINE	0
-	cd /Users/ivankruchkoff/Database; mysqldump -h 192.168.1.201 -P 3306 -p'abcd' -u wp webpres > webpres-local_`date +'%Y_%m_%d'`.sql
-"3	LINE	0
 	
+"3	LINE	0
+	cd /Users/ivankruchkoff/revinet/publishers.revinet.com/sites/publishers.revinet.com/images ; sleep 60m ; scp 1 kruchkof@moka.com.au:
 "4	LINE	0
-	        // $(this).appendTo(pre);
+	        $this->add_js_file('/js/map2.js', false);
 "5	LINE	0
-	        // var pre = $(this).parent().append('<pre class="qs-pre"></pre>');
+	
 "6	LINE	0
-	        
+	
 "7	LINE	0
-	        alert('hi');
+	</pre>
 "8	LINE	0
-	        print_r();
+	<pre>
+	    {Mod::Map::Width=500;Height=500;AdTemplate=summary;MapType=terrain;UserIconURL=/images/awesome_icon.png}
 "9	LINE	0
-	        print_r($_SESSION);
+	* *PageType*: details or summary - this is set by the page template that calls this module and defines if we're showing a map for search results or for only one ad
 "a	CHAR	0
-	3dd€kd
+	dt,x/,dt,nD^kj
 "b	CHAR	0
 	100@a7G
 "c	CHAR	0
@@ -165,173 +172,1231 @@ $
 "g	CHAR	0
 	2571
 <AÂ€kdÂ€kdÂ€kuÂ€kuÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdanomaly_template = Â€klÂ€krÂ€Ã½aÂ€Ã½`Â€Ã½,Â€Ã½.dwilogin_template Â€@7Â€kuÂ€kdÂ€kdÂ€@7./Â€kbÂ€kbÂ€kb ;Â€kbliogÂ€kbÂ€kbÂ€kbogin_templateÂ€kbÂ€kbÂ€kbÂ€kbÂ€kbÂ€kbÂ€kbÂ€kbÂ€kbs-single.template:wÂ€Ã½aÂ€Ã½`Â€Ã½aÂ€Ã½`Â€kuÂ€kuÂ€kuÂ€Ã½,Â€Ã½.Â€klDAturÂ€kbÂ€kbrue:wÂ€Ã½aÂ€Ã½`uu:wÂ€Ã½aÂ€Ã½`Â€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kuÂ€kuÂ€kdÂ€kdÂ€kdAsite_root = Â€Ã½aÂ€Ã½`Â€khibaseÂ€kDÂ€kDÂ€kDÂ€kDÂ€krÂ€kDÂ€kDÂ€kDÂ€kDurl:wAÂ€kb:wÂ€Ã½aÂ€Ã½`Â€Ã½LÂ€Ã½LÂ€Ã½LÂ€Ã½LÂ€Ã½LÂ€Ã½LÂ€Ã½KÂ€Ã½KÂ€Ã½KÂ€Ã½KÂ€Ã½,Â€Ã½.Â€Ã½,Â€Ã½.:%s/ivan.Â€kbkruchkoff@localhost/ivan.kruchkoff@revinet.comÂ€kdÂ€kdÂ€kdddddddddÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kdÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuÂ€kuA\xyypAddÂ€ku\xAÂ€kbÂ€kbÂ€kbÂ€kbfalse:wÂ€Ã½aÂ€Ã½`Â€Ã½aÂ€Ã½`€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kluuuDA8000€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd\x€kd\x:w€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€kr€kr€kr€kr€krDAivan.kruchkoff@adperfect.com€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku\x€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€klDA192.168.6.201:08€kb€kb8000:w€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd`h`h`l€ýa€ý`€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd €kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kN€kN€kP€kP€kP€kP€kP€kP€kP€kP€kP€kP€kP€kP€kN€kP€kP€kP€kP€kd€kd€kd€kl€kl€kli192.168.6.201::w`h€ýa€ý`€ýa€ý`/mod/mod_uniq\x:w€ýa€ý`€ýa€ý`€ýa€ý`€ýa€ý`€ýa€ý`€ýa€ý`€ý,€ý.€ý,€ý.€ü €ý,€ü €ý.€ü@€ý,€ü@€ý.€ýa€ý`€ý,€ý.1G
+"h	CHAR	0
+	
 "j	CHAR	0
 	1
 "q	CHAR	0
 	dwj0@q1G€ýa€ý`€ýa€ý`
 "s	CHAR	0
-	h 
+	@aj
 "u	CHAR	0
 	5139
 <u€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kdyy550GP\xA€kl€kb€kb€kb€kbelee€kbment_with_indicatof€kbr:w€ýa€ý`€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€kd€kd€kd€kdAalert('found in main dom');:wyy€kd€kd€kd€kd€kd€kd€kdpi			€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kD€kD€kD€kD€kD€kD€kD€kDiframe €kr + i:w:make€ýa€ý`:ls€ýa€ý`€ýa€ý`€ýa€ý`€KA€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kdu€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kdA else { alert(no€kb€kb'cho€kb€kb€kbnot');}:w€ýa€ý`€ýa€ý`€ýa€ý`€ýa€ý`€ý,€ý.:makeu€kP€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€ku€ku€kuAalert('a€kba')'€kb;yy€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€kup>>>>>>A€kl€kl€kl€kbb:w€ýa€ý`€ýa€ý`€ý,€ý.€ý,€ý.€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr€kr€kr€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kr€kd€kr€kr€kr€kr€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kr€kd€kd€kldw€ku€kr€kr€kr€kr€ku€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kuu€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd1Gu€ku€ku€ku€ku€kd€kuAalert(a€kb'a2');:w€ýa€ý`€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€ku€ku€ku€ku€ku€kd€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kuAvar element_with_indicator = null;:w€kddd€kd€kd€ku€kddd€ku€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€klxxxx:w€kd€kd€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kd€kd€kd€kd1G/iFra€kb€kb€kbframesnnnnnnn€kr€kr€kr€kr€kr€kr€kr€kr€kr€krcwgBrowser:w€ýa€ý`€kl€kl€kl€kl€kl€kl€kl€kl€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€krDu€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€klp€krD:w€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl:w€ýa€ý`€ýa€ý`€ku€kr€kd€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kd€kN€kP€ýa€ý`€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr€kd€ku€ku€ku€ku€kl€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€kl€kd€kl€ku€kl€kl€kl€kldddddddddddddddddddddd€ku€kddddddddddddd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€krD€ku€ku€ku€ku€ku€ku€ku€ku€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr10uuuuuuuu€kd€ku€ku€ku€ku€ku€ku€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr€kd€kd€kd€kd€kd€ku€ku€ku€kudd€ku€kr€kr€kr€kr€ku€ku€ku€kdAvar check_elem = iframesp€kb[i].contentDocument.getElementById(selected-a€kb€kb_ad_)€kbid))€kb;if (chek€kbck_elem) P€kb{element_with_indicator = check_em€kblem.parne€kb€kbentNode;;€kb€ku€kd€kd\x€kd\x€kd€kd€kd€kd€kd€kd€ku€ku:€kb€kb:w€ýa€ý`€ýa€ý`€ýa€ý`€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku\x€ku€ku€ku\x€ýa€ý`€ý,€ý.€ýa€ý`€ý,€ý.€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýK€ýa€ý`€ýa€ý`€ýa€ý`€ý,€ý./dupeCheck€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ýa€ý`1G€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€ýa€ý`€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL/dupenmnnn€kP€ku€ku€ku€ku€ku€ku€ku€kP€kP€kP€kN€kN€kN€kP€kP€kP€kDbtuu\bt€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýL€ý,€ý.G€ýL€ýL€ýL€ýL€ýL€ýL€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýK€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýL€ýa€ý`/notnnn€ýa€ý`/selected_ad?€kunn€kd€kd€kd€kdA€kl€kl€kl€kl:w€ýa€ý`:vsp1G
 "x	CHAR	0
 	€ýa€ý`2dd€ýa€ý`
 "-	CHAR	0
-	TRUE
+	 
 
 # File marks:
-'0  1  0  ~/macports/apache2/webroot_8002/config/database.yml
-'1  1  0  ~/macports/apache2/webroot_8002/config/database.
-'2  1  0  ~/macports/apache2/webroot_8002/include/config.php
-'3  1  0  ~/macports/apache2/webroot_8002/include/config
-'4  1  0  ~/bils
-'5  3  0  ~/bin/dbd.sh
-'6  4  128  ~/bin/dbd.sh
-'7  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
-'8  63  24  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
-'9  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
+'0  9  0  ~/bin/dbd.sh
+'1  1  0  ~/bin/dbd.sh
+'2  55  81  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+'3  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+'4  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/js/wpsignin.js
+'5  857  25  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+'6  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+'7  10  131  ~/bin/dbd.sh
+'8  10  146  ~/bin/dbd.sh
+'9  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/wpsignin.php
 
 # Jumplist (newest first):
--'  1  0  ~/macports/apache2/webroot_8002/config/database.yml
--'  1  0  ~/macports/apache2/webroot_8002/config/database.
--'  1  0  ~/macports/apache2/webroot_8002/include/config.php
--'  1  0  ~/macports/apache2/webroot_8002/include/config
--'  1  0  ~/bils
--'  3  0  ~/bin/dbd.sh
--'  4  128  ~/bin/dbd.sh
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
--'  63  24  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
--'  23  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/advancedsearch.php
--'  760  48  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/advancedsearch.php
--'  42  53  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/Geocode.php
--'  130  35  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/location.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/location.php
--'  45  24  ~/.screenrc
--'  98  15  ~/.screenrc
--'  1  0  ~/.screenrc
--'  103  8  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  71  89  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  70  38  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  91  90  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  31  45  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  23  36  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  22  59  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  20  54  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  40  32  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  27  7  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  52  8  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  55  26  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  59  29  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  60  57  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  62  34  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  2  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  102  89  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  100  30  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  82  27  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  86  36  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  83  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  89  11  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  74  14  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  72  36  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  69  39  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  77  38  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  75  35  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  67  109  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  68  24  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  106  7  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  105  19  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  710  72  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
--'  742  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/advancedsearch.php
--'  754  41  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/advancedsearch.php
--'  1  3  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/svn-prop.tmp
--'  36  60  ~/.bashrc
--'  35  8  ~/.bashrc
--'  73  18  ~/.bashrc
--'  34  6  ~/.bashrc
--'  150  3  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  151  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/svn-commit.tmp
--'  1  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/svn-prop.tmp
--'  134  42  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  132  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  37  25  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  46  26  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  1  0  ~/Database/webpres_2010_11_04.sql
--'  2  76  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/index.php
--'  1  0  /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/views/common/footer.php
--'  1  0  /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/config
--'  98  39  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Model.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Model.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/resource.php
--'  63  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/resource.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/res
+-'  9  0  ~/bin/dbd.sh
+-'  10  131  ~/bin/dbd.sh
 -'  1  0  ~/bin/dbd.sh
--'  186  0  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/config.php
--'  293  0  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/config.php
--'  1  0  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/models/categorypreview.php
--'  1  0  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/js/jquery.hoverIntent.minified.js
--'  1  0  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/js/categorypreview.js
--'  1  0  /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/database.php
--'  43  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/host_config.php
--'  6  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/host_config.php
--'  16  14  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/dev_ips.php
--'  61  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
--'  39  31  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
--'  103  8  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  71  89  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  70  38  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  91  90  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  31  45  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  23  36  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
--'  22  59  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
+-'  55  81  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+-'  72  25  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+-'  68  48  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+-'  52  19  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+-'  2  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/js/wpsignin.js
+-'  857  25  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+-'  6  80  ~/bin/dbd.sh
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/wpsignin.php
+-'  1  0  /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/controllers/api/revify_v1_0.php
+-'  50  32  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  73  30  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/js/comments.js
+-'  108  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
+-'  107  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
+-'  1  4  /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-1290552979
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/interactionview.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/pageview_helper.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/auth_helper.php
+-'  856  28  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+-'  164  38  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+-'  5  13  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+-'  156  39  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
+-'  296  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/js/message.js
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/confirm.php
+-'  164  43  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/auth_helper.php
+-'  135  8  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/createprofile.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/createprofile.php
+-'  768  32  ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/GMap.php
+-'  24  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  32  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  2  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  1151  135  ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/GMap.php
+-'  116  20  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  117  6  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/createprofile.php
+-'  23  24  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/confirm.php
+-'  17  10  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/confirm.php
+-'  187  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  180  27  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  174  44  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  169  143  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  166  9  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  118  28  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/report
+-'  51  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/pageview_helper.php
+-'  49  4  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  43  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  89  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/pageview_helper.php
+-'  118  12  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/pageview_helper.php
+-'  177  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+-'  80  22  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  83  21  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  70  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  91  22  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  87  24  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  98  27  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  79  45  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  32  32  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  89  4  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  111  15  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  25  28  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  80  132  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  74  30  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  27  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  81  112  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  770  17  ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/GMap.php
+-'  51  61  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  56  38  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  55  20  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  39  8  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  48  25  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  60  67  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  61  4  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  82  23  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  59  23  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  37  87  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  63  19  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  45  41  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  42  51  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+-'  53  22  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  56  21  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  44  44  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/moduletemplate.php
+-'  132  34  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/moduletemplate.php
+-'  1  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/moduletemplate.php
+-'  768  32  ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/GMap.php
+-'  24  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  32  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+-'  2  0  ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
 
 # History of marks within files (newest to oldest):
 
-> ~/macports/apache2/webroot_8002/config/database.yml
-	"	1	0
-
-> ~/macports/apache2/webroot_8002/config/database.
-	"	1	0
-
-> ~/macports/apache2/webroot_8002/include/config
-	"	1	0
-
-> ~/bils
-	"	1	0
-
 > ~/bin/dbd.sh
-	"	3	0
-	.	2	0
+	"	9	0
+	.	10	0
+	+	6	0
+	+	6	0
+	+	6	129
+	+	6	0
+	+	6	0
+	+	3	0
+	+	6	114
+	+	6	0
 	+	4	0
+	+	4	95
+	+	3	120
+	+	4	132
 	+	4	0
-	+	4	129
+	+	4	133
+	+	5	66
+	+	3	0
+	+	2	41
+	+	3	0
 	+	4	0
-	+	4	0
-	+	2	0
+	+	5	0
+	+	7	0
+	+	7	169
+	+	7	0
+	+	7	0
+	+	7	174
+	+	8	0
+	+	8	174
+	+	9	174
+	+	8	0
+	+	8	234
+	+	6	0
+	+	10	0
+	+	10	147
+	+	10	131
+	+	10	0
+	+	10	105
+	+	10	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/contactseller.php
+	"	55	81
+	^	55	82
+	.	55	81
+	+	68	48
+	+	97	86
+	+	67	57
+	+	55	81
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/contactseller.js
+	"	2	26
+	^	2	27
+	.	2	26
+	+	3	0
+	+	2	26
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/wpsignin.js
+	"	3	2
+	^	2	32
+	.	3	0
+	+	2	31
+	+	3	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/wpsignin.php
+	"	69	48
+	^	54	46
+	.	55	0
+	+	39	0
+	+	46	0
+	+	39	50
+	+	45	30
+	+	43	44
+	+	44	50
+	+	93	81
+	+	28	49
+	+	56	0
+	+	50	45
+	+	53	46
+	+	54	46
+	+	55	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
+	"	71	17
+	^	758	29
+	.	66	0
+	+	947	28
+	+	726	94
+	+	749	0
+	+	709	0
+	+	709	0
+	+	710	0
+	+	695	20
+	+	696	15
+	+	709	0
+	+	709	0
+	+	710	0
+	+	709	0
+	+	710	0
+	+	709	37
+	+	709	0
+	+	709	0
+	+	713	0
+	+	700	0
+	+	708	0
+	+	709	0
+	+	710	0
+	+	709	0
+	+	710	44
+	+	711	32
+	+	709	0
+	+	711	51
+	+	712	0
+	+	713	9
+	+	725	0
+	+	717	0
+	+	713	33
+	+	717	36
+	+	718	0
+	+	717	37
+	+	719	26
+	+	723	36
+	+	724	0
+	+	723	0
+	+	714	54
+	+	715	27
+	+	717	0
+	+	716	0
+	+	717	34
+	+	723	34
+	+	720	0
+	+	721	26
+	+	146	9
+	+	710	0
+	+	709	0
+	+	712	0
+	+	713	0
+	+	733	0
+	+	732	22
+	+	749	0
+	+	737	0
+	+	740	0
+	+	743	0
+	+	744	0
+	+	745	0
+	+	744	0
+	+	745	20
+	+	745	28
+	+	745	23
+	+	745	0
+	+	746	31
+	+	746	51
+	+	747	0
+	+	745	0
+	+	744	0
+	+	743	0
+	+	762	0
+	+	749	0
+	+	750	0
+	+	762	0
+	+	751	0
+	+	753	0
+	+	751	0
+	+	753	0
+	+	754	0
+	+	754	0
+	+	752	21
+	+	754	33
+	+	756	26
+	+	750	21
+	+	752	14
+	+	756	21
+	+	758	28
+	+	66	0
+	o	1	25
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/createprofile.php
+	"	70	33
+	^	130	59
+	.	38	0
+	+	16	0
+	+	127	14
+	+	124	55
+	+	127	0
+	+	37	0
+	+	38	61
+	+	38	47
+	+	107	50
+	+	106	58
+	+	107	66
+	+	75	0
+	+	60	0
+	+	75	41
+	+	75	0
+	+	68	0
+	+	71	28
+	+	70	29
+	+	69	32
+	+	71	41
+	+	73	60
+	+	73	0
+	+	80	60
+	+	84	0
+	+	89	0
+	+	75	0
+	+	88	61
+	+	86	0
+	+	87	53
+	+	80	0
+	+	78	0
+	+	81	53
+	+	82	54
+	+	67	40
+	+	87	51
+	+	142	0
+	+	142	0
+	+	142	0
+	+	142	0
+	+	142	0
+	+	142	36
+	+	142	45
+	+	142	0
+	+	142	12
+	+	142	0
+	+	142	0
+	+	142	58
+	+	142	27
+	+	142	47
+	+	142	15
+	+	27	22
+	+	28	0
+	+	27	22
+	+	27	26
+	+	27	19
+	+	35	12
+	+	28	0
+	+	27	0
+	+	27	0
+	+	27	0
+	+	27	80
+	+	27	33
+	+	27	0
+	+	27	25
+	+	27	19
+	+	27	22
+	+	27	0
+	+	127	0
+	+	126	0
+	+	127	0
+	+	137	0
+	+	60	0
+	+	127	0
+	+	16	39
+	+	131	0
+	+	130	61
+	+	137	0
+	+	137	65
+	+	137	0
+	+	137	0
+	+	137	0
+	+	13	0
+	+	13	0
+	+	130	0
+	+	130	58
+	+	137	0
+	+	130	0
+	+	12	0
+	+	38	0
+	a	124	8
+	n	127	28
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/contactseller.
+	"	1	0
+
+> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/controllers/api/revify_v1_0.php
+	"	84	13
+	^	84	14
+	.	84	13
+	+	85	0
+	+	81	25
+	+	85	18
+	+	85	17
+	+	81	22
+	+	85	0
+	+	83	31
+	+	84	13
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/comments.js
+	"	300	22
+	^	300	40
+	.	300	0
+	+	41	0
+	+	206	19
+	+	206	121
+	+	372	19
+	+	302	5
+	+	297	42
+	+	373	41
+	+	297	49
+	+	299	0
+	+	298	38
+	+	299	16
+	+	302	0
+	+	300	0
+	+	298	33
+	+	300	45
+	+	301	0
+	+	302	0
+	+	373	0
+	+	373	0
+	+	32	0
+	+	32	8
+	+	32	52
+	+	32	0
+	+	310	0
+	+	309	0
+	+	298	0
+	+	298	0
+	+	299	0
+	+	300	22
+	+	32	0
+	+	236	0
+	+	298	40
+	+	300	39
+	+	298	0
+	+	300	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
+	"	50	32
+	^	123	21
+	.	50	0
+	+	24	35
+	+	25	37
+	+	74	24
+	+	78	0
+	+	74	79
+	+	74	0
+	+	74	0
+	+	75	74
+	+	77	64
+	+	76	0
+	+	22	94
+	+	78	0
+	+	75	0
+	+	42	67
+	+	45	83
+	+	66	63
+	+	74	71
+	+	66	87
+	+	74	83
+	+	74	0
+	+	42	83
+	+	45	99
+	+	45	0
+	+	37	0
+	+	37	0
+	+	39	0
+	+	42	0
+	+	45	0
+	+	26	0
+	+	24	0
+	+	24	80
+	+	26	0
+	+	32	0
+	+	32	94
+	+	32	28
+	+	32	94
+	+	34	0
+	+	32	110
+	+	34	0
+	+	32	88
+	+	34	81
+	+	59	60
+	+	60	98
+	+	43	0
+	+	55	0
+	+	53	54
+	+	67	0
+	+	74	0
+	+	75	0
+	+	73	0
+	+	87	0
+	+	87	57
+	+	87	0
+	+	87	27
+	+	87	38
+	+	87	0
+	+	83	0
+	+	72	0
+	+	124	0
+	+	124	0
+	+	115	57
+	+	124	20
+	+	124	0
+	+	115	69
+	+	116	23
+	+	120	9
+	+	124	0
+	+	120	9
+	+	124	17
+	+	124	19
+	+	124	0
+	+	118	32
+	+	116	0
+	+	116	35
+	+	116	36
+	+	118	0
+	+	116	0
+	+	116	0
+	+	116	0
+	+	116	0
+	+	124	0
+	+	124	25
+	+	124	24
+	+	124	0
+	+	116	0
+	+	124	0
+	+	116	0
+	+	124	20
+	+	67	19
+	+	68	0
+	+	85	0
+	+	124	0
+	+	124	0
+	+	121	41
+	+	124	0
+	+	15	0
+	+	117	39
+	+	123	20
+	+	118	0
+	+	50	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/interactionview.php
+	"	30	54
+	^	35	35
+	.	35	34
+	+	44	56
+	+	44	56
+	+	44	56
+	+	44	77
+	+	44	0
+	+	44	115
+	+	45	0
+	+	44	140
+	+	44	66
+	+	45	0
+	+	44	66
+	+	44	7
+	+	44	94
+	+	44	19
+	+	45	0
+	+	44	0
+	+	42	0
+	+	44	0
+	+	43	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	47	0
+	+	48	23
+	+	36	16
+	+	31	0
+	+	30	54
+	+	36	0
+	+	35	34
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/auth_helper.php
+	"	165	31
+	.	166	0
+	+	77	0
+	+	78	0
+	+	79	44
+	+	82	0
+	+	86	3
+	+	87	0
+	+	88	0
+	+	86	29
+	+	164	71
+	+	165	49
+	+	164	46
+	+	163	0
+	+	165	0
+	+	167	52
+	+	167	0
+	+	165	0
+	+	165	0
+	+	167	0
+	+	165	0
+	+	165	53
+	+	167	0
+	+	166	0
+	+	165	0
+	+	166	0
+	+	166	44
+	+	166	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/helpers/pageview_helper.php
+	"	69	0
+	^	67	53
+	.	67	52
+	+	274	0
+	+	274	14
+	+	274	0
+	+	271	19
+	+	65	32
+	+	69	0
+	+	68	15
+	+	65	0
+	+	66	0
+	+	67	52
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/GMap.php
+	"	768	32
+	^	2167	70
+	.	2167	0
+	+	1624	0
+	+	1625	17
+	+	1950	0
+	+	2169	0
+	+	1666	0
+	+	1656	0
+	+	1656	0
+	+	1656	10
+	+	1657	0
+	+	1656	0
+	+	2166	0
+	+	1657	32
+	+	1657	24
+	+	1657	24
+	+	1657	77
+	+	1657	13
+	+	1657	0
+	+	1657	0
+	+	2169	85
+	+	1657	0
+	+	1657	0
+	+	1657	0
+	+	1657	17
+	+	1657	8
+	+	1657	0
+	+	1657	0
+	+	1657	0
+	+	1657	0
+	+	2166	0
+	+	2176	0
+	+	2167	0
+	+	2167	0
+	+	2169	0
+	+	1712	8
+	+	1712	0
+	+	2169	0
+	+	1712	33
+	+	2169	0
+	+	1712	20
+	+	2169	0
+	+	2169	0
+	+	2169	46
+	+	2176	84
+	+	1712	0
+	+	2169	0
+	+	2167	0
+	+	2168	48
+	+	1684	13
+	+	2168	0
+	+	2167	0
+	+	2168	0
+	+	1684	0
+	+	1686	8
+	+	2168	0
+	+	1692	25
+	+	1692	0
+	+	2176	0
+	+	2176	0
+	+	2170	41
+	+	1689	51
+	+	1692	0
+	+	1691	15
+	+	1690	38
+	+	1689	48
+	+	1686	20
+	+	1693	8
+	+	1689	56
+	+	1690	33
+	+	1685	53
+	+	1599	85
+	+	2167	82
+	+	2167	0
+	a	1665	22
+	b	1692	4
 
 > ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config_webpresentation.php
-	"	63	24
-	^	63	29
-	.	63	0
-	+	73	0
+	"	108	12
+	^	107	15
+	.	107	12
+	+	107	12
+
+> /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-1290552979
+	"	1	4
+	^	1	5
+	.	2	0
+	+	1	5
 	+	2	0
-	+	9	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/message.js
+	"	5	2
+	.	5	0
+	+	2	0
+	+	2	52
+	+	2	8
+	+	2	11
+	+	2	49
+	+	2	9
+	+	2	0
+	+	2	0
+	+	2	49
+	+	2	22
+	+	2	83
+	+	2	67
 	+	10	0
-	+	12	0
-	+	12	17
+	+	2	0
+	+	2	41
+	+	2	87
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	50
+	+	2	0
+	+	10	0
+	+	2	24
+	+	10	45
+	+	10	0
 	+	9	0
+	+	6	26
+	+	9	0
+	+	6	0
+	+	5	0
+	+	2	19
+	+	9	45
+	+	2	23
+	+	2	10
+	+	2	10
+	+	2	9
+	+	5	0
+	+	2	38
+	+	2	39
+	+	4	4
+	+	3	31
+	+	7	124
+	+	7	128
+	+	9	0
+	+	7	89
+	+	5	0
+	+	5	18
+	+	5	33
+	+	5	18
+	+	5	4
+	+	5	0
+	+	5	43
+	+	5	38
+	+	5	0
+	+	7	152
+	+	3	63
+	+	5	0
+	+	7	89
+	+	7	94
+	+	7	89
+	+	9	0
+	+	7	95
+	+	5	0
+	+	5	20
+	+	5	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	1	0
+	+	1	0
+	+	2	0
+	+	5	0
+	+	10	0
+	+	10	63
+	+	8	95
+	+	8	0
+	+	8	102
+	+	5	20
+	+	10	25
+	+	10	43
+	+	5	0
+	+	10	0
+	+	3	28
+	+	5	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/messages.php
+	"	16	16
+	^	17	0
+	.	16	16
+	+	4	0
+	+	5	13
+	+	10	0
+	+	16	0
+	+	18	0
+	+	16	16
+	+	18	23
+	+	16	71
+	+	20	0
+	+	22	29
+	+	16	112
+	+	17	0
+	+	5	13
+	+	22	29
+	+	16	71
+	+	18	23
+	+	16	16
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/confirm.php
+	"	24	25
+	^	24	37
+	.	24	36
+	+	44	15
+	+	52	74
+	+	44	85
+	+	36	78
+	+	36	32
+	+	36	87
+	+	37	0
+	+	38	0
+	+	39	0
+	+	38	0
+	+	39	0
+	+	40	0
+	+	38	19
+	+	37	20
+	+	38	40
+	+	39	0
+	+	38	40
+	+	36	0
+	+	39	24
+	+	44	0
+	+	40	9
+	+	43	27
+	+	26	0
+	+	23	73
+	+	73	28
+	+	38	38
+	+	41	0
+	+	42	0
+	+	41	39
+	+	42	52
+	+	23	75
+	+	42	69
+	+	43	0
+	+	46	0
+	+	70	0
+	+	52	0
+	+	46	0
+	+	67	90
+	+	54	8
+	+	68	12
+	+	67	108
+	+	69	0
+	+	59	24
+	+	58	54
+	+	53	0
+	+	14	52
+	+	23	12
+	+	38	38
+	+	22	15
+	+	23	0
+	+	25	0
+	+	16	18
+	+	36	0
+	+	34	49
+	+	34	0
+	+	33	0
+	+	32	0
+	+	29	50
+	+	30	76
+	+	42	87
+	+	15	26
+	+	29	25
+	+	15	33
+	+	29	0
+	+	32	0
+	+	31	13
+	+	30	0
+	+	31	0
+	+	31	35
+	+	31	16
+	+	31	0
+	+	31	0
+	+	31	14
+	+	31	0
+	+	30	0
+	+	31	0
+	+	16	54
+	+	21	0
+	+	17	34
+	+	20	61
+	+	17	87
+	+	17	0
+	+	19	76
+	+	17	88
+	+	15	0
+	+	35	75
+	+	61	70
+	+	62	19
+	+	64	64
+	+	65	21
+	+	65	49
+	+	67	57
+	+	37	14
+	+	39	18
+	+	52	49
+	+	11	0
+	+	38	32
+	+	42	63
+	+	23	0
+	+	24	36
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/message.php
+	"	23	23
+	^	21	69
+	.	23	0
+	+	23	106
+	+	23	0
+	+	17	99
+	+	23	59
+	+	23	0
+	+	16	0
+	+	17	107
+	+	23	0
+	+	23	0
+	+	17	106
+	+	17	0
+	+	23	0
+	+	22	0
+	+	23	0
+	+	22	0
+	+	18	28
+	+	18	79
+	+	19	0
+	+	18	0
+	+	18	0
+	+	19	25
+	+	20	0
+	+	21	13
+	+	21	0
+	+	22	61
+	+	21	52
+	+	22	54
+	+	21	68
+	+	23	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
+	"	156	39
+	.	156	0
+	+	13	0
+	+	156	0
+	+	156	0
+	+	156	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
+	"	11	10
+	.	14	0
+	+	633	0
+	+	633	0
+	+	632	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	607	0
+	+	606	0
+	+	604	0
+	+	603	0
+	+	588	0
+	+	588	0
+	+	588	0
+	+	587	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	575	0
+	+	574	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	565	0
+	+	564	0
+	+	292	0
+	+	296	0
+	+	426	0
+	+	289	0
+	+	152	0
+	+	152	0
+	+	152	0
+	+	151	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	139	0
+	+	138	0
+	+	126	0
+	+	113	0
+	+	86	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	14	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/helpers/url_helper.php
+	"	540	9
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/moduletemplate.php
+	"	44	44
+	.	132	0
+	+	132	0
+	+	132	35
+	+	132	0
+	+	132	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/ad.php
+	"	310	44
+	^	310	45
+	.	310	44
+	+	363	48
+	+	363	0
+	+	363	0
+	+	362	0
+	+	213	40
+	+	215	0
+	+	214	76
+	+	214	0
+	+	213	32
+	+	558	0
+	+	557	0
+	+	557	0
+	+	26	26
+	+	27	12
+	+	28	0
+	+	27	18
+	+	29	0
+	+	22	53
+	+	108	0
+	+	110	0
+	+	108	0
+	+	221	0
+	+	223	0
+	+	221	0
+	+	290	0
+	+	292	0
+	+	22	0
+	+	557	0
+	+	546	37
+	+	557	0
+	+	548	34
+	+	548	6
+	+	566	49
+	+	566	0
+	+	548	0
+	+	551	0
+	+	557	0
+	+	557	0
+	+	553	47
+	+	557	0
+	+	552	16
+	+	553	20
+	+	552	63
+	+	553	39
+	+	555	24
+	+	556	0
+	+	554	0
+	+	553	17
+	+	307	0
+	+	308	42
+	+	284	56
+	+	281	32
+	+	284	45
+	+	281	90
+	+	308	26
+	+	308	26
+	+	308	0
+	+	312	0
+	+	305	20
+	+	300	31
+	+	305	18
+	+	304	0
+	+	312	0
+	+	304	0
+	+	297	0
+	+	301	0
+	+	309	0
+	+	302	79
+	+	310	45
+	+	297	0
+	+	302	25
+	+	298	26
+	+	300	32
+	+	302	53
+	+	294	63
+	+	293	92
+	+	310	44
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reportad.php
+	"	187	12
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/__Tag_List__
+	"	11	12
+	.	12	0
+	+	119	0
+	+	119	0
+	+	118	0
+	+	107	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	83	0
+	+	82	0
+	+	69	0
+	+	52	0
+	+	23	0
+	+	23	0
+	+	22	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
 	+	12	0
-	+	73	0
-	+	63	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/report
+	"	1	0
 
 > ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/advancedsearch.php
-	"	760	48
+	"	982	17
 	^	757	77
 	.	758	0
 	+	337	26
@@ -420,409 +1485,404 @@ $
 	+	757	76
 	+	758	0
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/location.php
-	"	130	35
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/categories.php
+	"	209	25
+	^	219	72
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/Geocode.php
-	"	42	53
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/devpanel.php
-	"	65	8
-	^	71	189
-	.	71	188
-	+	86	38
-	+	72	46
-	+	78	0
-	+	83	161
-	+	72	48
-	+	75	0
-	+	74	60
-	+	82	31
-	+	83	0
-	+	86	0
-	+	83	0
-	+	86	0
-	+	95	0
-	+	86	24
-	+	95	0
-	+	95	0
-	+	87	42
-	+	95	0
-	+	93	0
-	+	83	0
-	+	89	0
-	+	89	190
-	+	86	0
-	+	94	0
-	+	83	0
-	+	86	47
-	+	87	27
-	+	86	36
-	+	83	0
-	+	86	0
-	+	86	36
-	+	85	0
-	+	86	39
-	+	78	0
-	+	83	0
-	+	72	74
-	+	78	0
-	+	82	0
-	+	83	13
-	+	84	35
-	+	90	0
-	+	91	0
-	+	89	76
-	+	90	81
-	+	91	27
-	+	90	0
-	+	92	27
-	+	91	82
-	+	95	0
-	+	92	28
-	+	55	90
-	+	64	31
-	+	55	65
-	+	55	56
-	+	64	0
-	+	55	105
-	+	57	46
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/adslist.php
+	"	66	35
+	^	84	59
+	.	84	58
+	+	63	69
+	+	63	78
+	+	63	72
+	+	63	78
+	+	63	12
 	+	63	0
-	+	60	69
-	+	61	28
+	+	63	0
+	+	63	64
+	+	63	0
+	+	68	0
+	+	63	0
+	+	63	0
+	+	68	0
+	+	63	0
+	+	63	0
+	+	68	0
+	+	63	0
+	+	68	14
+	+	63	0
+	+	68	0
+	+	80	0
+	+	96	0
+	+	96	0
+	+	50	37
+	+	63	19
+	+	63	24
+	+	68	0
+	+	68	0
+	+	68	0
+	+	68	29
+	+	68	0
+	+	68	0
+	+	68	46
+	+	63	0
+	+	63	112
+	+	68	0
+	+	68	0
+	+	63	71
+	+	68	0
+	+	68	76
+	+	68	90
+	+	68	0
+	+	68	0
+	+	63	66
+	+	68	0
+	+	63	71
+	+	68	0
+	+	68	31
+	+	68	0
+	+	63	0
+	+	68	33
+	+	80	11
+	+	93	15
+	+	95	11
+	+	96	0
+	+	96	0
+	+	96	0
+	+	96	81
+	+	96	0
+	+	80	0
+	+	80	18
+	+	96	0
+	+	96	0
+	+	96	0
+	+	96	0
+	+	96	81
+	+	80	0
+	+	63	17
+	+	68	0
+	+	63	19
+	+	80	0
 	+	62	0
-	+	60	0
-	+	56	24
-	+	59	0
-	+	60	29
-	+	59	75
-	+	55	81
-	+	42	40
-	+	44	26
-	+	42	0
-	+	40	0
-	+	13	90
-	+	40	0
-	+	14	26
-	+	15	39
-	+	16	42
-	+	15	82
-	+	18	28
-	+	15	49
-	+	41	47
-	+	40	0
-	+	27	41
-	+	27	0
-	+	27	16
-	+	27	43
-	+	28	39
-	+	29	42
-	+	28	75
-	+	27	0
-	+	31	45
-	+	23	41
-	+	31	0
-	+	91	85
-	+	92	39
-	+	91	96
-	+	92	45
-	+	91	91
-	+	104	59
-	+	91	86
-	+	71	188
-
-> ~/.screenrc
-	"	45	24
-	^	33	67
-	.	33	65
-	+	98	0
-	+	33	65
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Controller.php
-	"	712	100
-	^	711	94
-	.	711	94
-	+	921	28
-	+	711	94
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/css/devpanel.css
-	"	50	25
-	^	50	26
-	.	50	26
-	+	9	20
-	+	4	0
-	+	9	0
-	+	37	0
-	+	4	0
-	+	32	0
-	+	33	0
-	+	34	0
-	+	35	0
-	+	2	17
-	+	36	19
-	+	32	23
-	+	31	18
-	+	30	17
-	+	28	33
+	+	64	29
 	+	61	0
-	+	42	0
-	+	28	54
-	+	43	20
-	+	44	16
-	+	46	0
-	+	28	36
-	+	43	0
-	+	34	14
-	+	59	18
 	+	60	0
-	+	4	26
-	+	6	17
-	+	8	23
-	+	6	17
-	+	14	0
-	+	21	0
-	+	20	7
-	+	23	0
-	+	21	19
-	+	23	0
-	+	22	23
-	+	22	0
-	+	23	0
-	+	25	0
-	+	24	14
-	+	26	0
-	+	12	11
-	+	17	23
-	+	18	0
-	+	41	0
-	+	56	0
-	+	52	0
-	+	51	14
-	+	49	15
-	+	53	20
-	+	54	36
-	+	55	13
-	+	50	26
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/js/devpanel.js
-	"	11	11
-	^	14	43
-	.	14	42
-	+	18	33
-	+	18	33
-	+	18	52
-	+	18	53
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	40
-	+	18	0
-	+	18	0
-	+	18	15
-	+	18	0
-	+	18	27
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	16
-	+	18	0
-	+	18	1
-	+	18	3
-	+	18	0
-	+	17	3
-	+	18	0
-	+	18	18
-	+	17	22
-	+	18	0
-	+	17	0
-	+	17	0
-	+	17	3
-	+	17	26
-	+	17	0
-	+	17	0
-	+	1	0
-	+	17	0
-	+	1	21
-	+	1	28
-	+	17	0
-	+	17	0
-	+	17	0
-	+	17	0
-	+	3	27
-	+	3	32
-	+	6	6
-	+	2	33
-	+	3	32
-	+	18	0
-	+	17	0
-	+	2	40
-	+	6	0
-	+	6	0
-	+	3	34
-	+	6	18
-	+	5	12
-	+	5	0
-	+	6	0
-	+	5	0
-	+	5	0
-	+	6	0
-	+	5	0
-	+	5	25
-	+	5	66
-	+	5	44
-	+	5	0
-	+	5	0
-	+	4	11
-	+	5	0
-	+	4	37
-	+	4	0
-	+	4	0
-	+	4	15
-	+	4	0
-	+	5	0
-	+	7	47
-	+	8	35
-	+	9	15
-	+	10	37
-	+	9	44
-	+	10	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	11	47
-	+	13	0
-	+	13	22
-	+	13	57
-	+	13	29
-	+	13	61
-	+	13	0
-	+	13	0
-	+	12	7
-	+	13	0
-	+	12	34
-	+	11	26
-	+	13	0
-	+	14	25
-	+	15	64
-	+	11	44
-	+	14	42
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/svn-prop.tmp
-	"	2	10
-	^	2	11
-	.	2	10
-	+	2	10
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/index.php
-	"	22	0
-	^	14	0
-	.	13	51
-	+	47	0
-	+	13	51
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/Router.php
-	"	93	0
-	.	92	0
+	+	59	43
+	+	96	0
+	+	64	0
+	+	65	24
+	+	64	0
 	+	67	0
-	+	92	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/__Tag_List__
-	"	12	4
-	.	23	0
+	+	67	96
+	+	67	0
 	+	66	0
-	+	23	0
+	+	68	38
+	+	96	24
+	+	80	0
+	+	80	0
+	+	96	0
+	+	80	0
+	+	49	0
+	+	49	0
+	+	72	99
+	+	80	0
+	+	65	0
+	+	85	0
+	+	85	0
+	+	84	88
+	+	148	28
+	+	84	58
+	b	93	13
+	m	49	2
+	n	49	2
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/Input.php
-	"	98	33
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/WP_Email.php
+	"	33	47
+	^	214	66
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/svn-prop.tmp
-	"	1	4
-	^	1	5
-	.	1	4
-	+	3	0
-	+	1	4
-	+	2	5
-	+	1	4
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/editprofile.php
+	"	218	26
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/Profiler.php
-	"	135	239
-	.	157	0
-	+	157	0
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/account.php
+	"	35	0
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/helpers/text_helper.php
-	"	310	1
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/emailfriend.php
+	"	1	20
+
+> ~/repo/wp/system/application/models/map.php
+	"	47	0
+
+> ~/repo/wp/system/application/models/__Tag_List__
+	"	20	13
+	.	25	0
+	+	25	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/counter.php
+	"	23	31
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/comments.php
+	"	103	26
+	^	299	79
+	.	299	78
+	+	299	78
+	n	306	25
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/category.php
+	"	477	24
 
 > ~/bin/onlogin
-	"	12	82
-	^	13	83
-	.	13	82
-	+	15	44
+	"	9	79
+	^	6	31
+	.	9	79
+	+	16	44
 	+	1	0
-	+	16	5
-	+	6	0
-	+	13	81
-	+	14	97
-	+	13	98
-	+	16	10
-	+	14	0
-	+	9	111
-	+	10	73
-	+	9	0
-	+	10	75
-	+	14	0
-	+	13	0
-	+	14	0
-	+	13	0
-	+	14	0
-	+	13	0
-	+	4	0
+	+	17	5
+	+	7	0
+	+	14	81
+	+	15	97
+	+	14	98
+	+	17	10
 	+	15	0
+	+	10	111
+	+	11	73
+	+	10	0
+	+	11	75
+	+	15	0
+	+	14	0
+	+	15	0
+	+	14	0
+	+	15	0
+	+	14	0
+	+	4	0
+	+	16	0
+	+	14	0
 	+	13	0
-	+	12	0
-	+	13	82
+	+	14	82
+	+	5	8
+	+	6	26
+	+	9	79
 
-> ~/.bashrc
-	"	36	60
-	^	36	9
-	.	36	9
-	+	37	21
-	+	30	16
-	+	54	23
-	+	59	39
-	+	75	0
-	+	58	0
-	+	74	18
-	+	75	0
-	+	35	12
-	+	34	0
-	+	35	61
-	+	36	8
-	+	35	0
-	+	36	9
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/adsbyadvertiser.php
-	"	23	0
-
-> ~/Applications/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
+> ~/coords.sql
 	"	1	0
 
-> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/views/common/footer.php
-	"	10	0
-	.	10	0
-	+	10	0
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/map.js
+	"	1	0
+	.	1	0
+	+	1	0
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/svn-prop.tmp
-	"	1	3
-	^	1	4
-	.	1	3
-	+	1	3
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/__Tag_List__
+	"	6	4
+	.	8	0
+	+	8	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/map2.js
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	7
+	+	1	18
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map2.php
+	"	9	9
+	^	46	36
+	.	9	9
+	+	26	16
+	+	26	16
+	+	26	27
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	26	119
+	+	21	35
+	+	22	29
+	+	21	31
+	+	22	32
+	+	21	0
+	+	26	0
+	+	26	0
+	+	26	0
+	+	44	0
+	+	61	0
+	+	63	24
+	+	52	0
+	+	20	0
+	+	26	47
+	+	26	0
+	+	17	0
+	+	26	0
+	+	17	0
+	+	17	0
+	+	61	33
+	+	55	0
+	+	61	0
+	+	60	0
+	+	26	14
+	+	55	0
+	+	15	0
+	+	55	84
+	+	56	86
+	+	57	52
+	+	58	9
+	+	59	20
+	+	26	47
+	+	44	24
+	+	39	0
+	+	44	0
+	+	39	54
+	+	29	59
+	+	39	23
+	+	29	0
+	+	39	46
+	+	38	52
+	+	30	45
+	+	31	44
+	+	38	55
+	+	39	0
+	+	32	0
+	+	38	73
+	+	39	0
+	+	38	0
+	+	29	59
+	+	29	0
+	+	32	13
+	+	26	0
+	+	26	0
+	+	45	0
+	+	35	55
+	+	38	28
+	+	27	28
+	+	41	8
+	+	28	0
+	+	44	12
+	+	26	0
+	+	42	0
+	+	44	0
+	+	43	0
+	+	42	82
+	+	27	19
+	+	33	31
+	+	32	0
+	+	33	0
+	+	32	0
+	+	33	59
+	+	30	0
+	+	38	0
+	+	35	0
+	+	38	0
+	+	36	42
+	+	37	53
+	+	38	82
+	+	37	63
+	+	34	27
+	+	38	130
+	+	41	0
+	+	41	179
+	+	40	0
+	+	41	0
+	+	40	132
+	+	26	0
+	+	24	35
+	+	46	0
+	+	9	9
+
+> ~/coords.sql!
+	"	3100	0
+	.	3101	0
+	+	1101	0
+	+	3101	0
+
+> ~/1.sql
+	"	7	0
+	^	7	0
+	.	1	0
+	+	1	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/recentads.php
+	"	18	8
+	^	53	147
+	.	53	0
+	+	55	16
+	+	55	0
+	+	52	0
+	+	53	0
+	+	53	16
+	+	53	16
+	+	53	43
+	+	53	53
+	+	53	26
+	+	53	80
+	+	53	28
+	+	54	95
+	+	53	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/featuredads.php
+	"	1	16
+	^	93	75
+	.	114	0
+	+	135	74
+	+	132	69
+	+	135	88
+	+	33	0
+	+	90	19
+	+	90	13
+	+	90	20
+	+	90	0
+	+	90	59
+	+	90	51
+	+	90	0
+	+	90	66
+	+	90	0
+	+	90	16
+	+	90	70
+	+	90	0
+	+	90	79
+	+	90	46
+	+	90	75
+	+	90	79
+	+	90	23
+	+	90	0
+	+	114	16
+	+	90	80
+	+	90	0
+	+	86	28
+	+	90	0
+	+	137	0
+	+	120	0
+	+	120	0
+	+	87	0
+	+	90	0
+	+	119	0
+	+	113	21
+	+	114	41
+	+	87	0
+	+	89	0
+	+	97	0
+	+	93	0
+	+	114	0
+	a	91	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/Unknown
+	"	1	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/newads.php
+	"	90	30
+	.	2	0
+	+	2	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/detailnavigation.php
+	"	19	0
 
 > ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/database.php
-	"	150	3
-	^	150	4
-	.	150	3
+	"	121	0
+	^	50	27
+	.	50	26
 	+	130	0
 	+	131	0
 	+	132	0
@@ -902,490 +1962,650 @@ $
 	+	136	35
 	+	151	0
 	+	150	3
+	+	50	26
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/svn-commit.tmp
-	"	1	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/svn-prop.tmp
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	12
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/config.php
-	"	177	1
-	^	177	4
-	.	178	0
-	+	178	27
-	+	177	0
-	+	178	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/dev_ips.php
-	"	16	14
-	^	16	15
-	.	16	15
-	+	14	19
-	+	15	20
-	+	16	15
-
-> ~/Database/webpres_2010_11_04.sql
-	"	117	2795
-
-> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/NERD_tree_2
-	"	7	0
-	.	1	0
-	+	1	0
-
-> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/system/application/config/config_revinet.php
-	"	6	9
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/my_config.php
-	"	4	0
-	^	8	23
-	.	6	29
-	+	13	30
-	+	6	31
-	+	7	20
-	+	8	22
-	+	6	29
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/__Tag_List__
-	"	25	11
-	.	26	0
-	+	48	0
-	+	48	0
-	+	48	0
-	+	48	0
-	+	48	0
-	+	48	0
-	+	47	0
-	+	38	0
-	+	37	0
-	+	26	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/index.php
-	"	2	76
-	^	2	76
-	.	2	76
-	+	4	0
-	+	3	1
-	+	1	5
-	+	2	101
-	+	2	76
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/recentads.php
-	"	1	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/moduletemplate.php
-	"	132	23
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/emailfriend.php
-	"	200	0
-
-> ~/revify/1
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-15043012478
+> /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-1289908715
 	"	1	3
-	^	1	4
-	.	1	3
+	^	1	3
+	.	2	0
 	+	1	3
+	+	2	0
 
-> /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-8157430342
-	"	1	9
-	^	1	10
-	.	1	10
-	+	1	10
-
-> /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-3581267277
+> /private/tmp/reset-dates.sh
 	"	1	0
 
-> /private/var/folders/sV/sVyi6-i7EjaY0FVC6bVOe+++-3c/-Tmp-/bash-fc-1288918879
-	"	1	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Model.php
-	"	98	39
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/split.list
-	"	4	67
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/resource.php
-	"	82	23
-	^	82	24
-	.	82	23
-	+	63	8
-	+	62	26
-	+	63	0
-	+	82	23
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/Geohash.php
-	"	57	4
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/WP_Email.php
-	"	48	24
-	^	48	25
-	.	48	24
-	+	48	24
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/adsync.php
-	"	147	38
-	^	147	39
-	.	147	38
-	+	147	38
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/category.php
-	"	440	10
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/profile.php
-	"	103	49
-	^	103	50
-	.	103	49
-	+	93	39
-	+	102	38
-	+	103	49
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/reports.php
-	"	374	19
-	^	374	20
-	.	374	19
-	+	200	35
-	+	373	19
-	+	374	19
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/results.php
-	"	97	34
-	^	97	35
-	.	97	34
-	+	95	29
-	+	97	34
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/map.php
-	"	515	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/ivan.php
-	"	12	9
-	^	12	10
-	.	8	9
-	+	8	9
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/featuredads.php
-	"	1	72
-	^	126	89
-	.	126	88
-	+	126	74
-	+	123	69
-	+	126	88
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/database.php
-	"	49	23
-	^	53	27
-	.	49	0
-	+	48	0
-	+	120	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	48	35
-	+	51	25
-	+	54	33
-	+	58	22
-	+	47	0
-	+	48	31
-	+	49	0
-	+	51	29
-	+	52	0
-	+	54	23
-	+	56	0
-	+	58	21
-	+	113	0
-	+	48	34
-	+	113	0
-	+	47	0
-	+	48	0
-	+	49	0
-	+	51	0
-	+	52	0
-	+	54	0
-	+	56	0
-	+	58	0
-	+	47	0
-	+	48	0
-	+	49	0
-	+	51	0
-	+	52	0
-	+	54	0
-	+	56	0
-	+	58	0
-	+	46	0
-	+	47	38
-	+	53	32
-	+	50	0
-	+	57	25
-	+	48	0
-	+	47	0
-	+	50	0
-	+	51	0
-	+	53	0
-	+	54	0
-	+	57	0
-	+	58	0
-	+	47	0
-	+	48	0
-	+	50	0
-	+	51	24
-	+	53	0
-	+	54	0
-	+	57	0
-	+	58	0
-	+	46	0
-	+	48	0
-	+	49	0
-	+	52	0
-	+	54	0
-	+	56	0
-	+	58	0
-	+	46	0
-	+	47	0
-	+	52	0
-	+	51	0
-	+	53	0
-	+	56	0
-	+	57	0
-	+	51	23
-	+	53	26
-	+	49	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/NERD_tree_1
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/NERD_tree_1
 	"	15	0
 	.	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/NERD_tree_2
-	"	9	0
-	.	1	0
-	+	1	0
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/search.php
+	"	302	0
 
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/index.html
-	"	1	64
-	^	1	65
-	.	1	43
-	+	1	43
+> ~/map2?hostname=postmedianetwork.webpres.adperfect.com
+	"	2999865	120
 
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/js/categorypreview.js
-	"	89	20
-	^	70	33
-	.	70	32
-	+	9	45
-	+	10	0
-	+	83	46
-	+	76	26
-	+	69	33
-	+	83	43
-	+	9	45
-	+	10	38
-	+	69	33
-	+	9	40
-	+	10	33
-	+	69	0
-	+	70	32
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/models/categorypreview.php
-	"	14	44
-	^	46	62
-	.	46	62
-	+	46	62
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/res
-	"	1	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/config.php
-	"	186	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/js/jquery.hoverIntent.minified.js
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/host_config.php
-	"	43	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/controllers/restsync.php
-	"	32	22
-	^	59	144
-	.	59	143
-	+	34	0
-	+	33	0
-	+	34	16
-	+	51	52
-	+	52	20
-	+	53	29
-	+	59	143
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/models/region.php
-	"	70	27
-	^	65	46
-	.	65	45
-	+	19	22
-	+	20	22
-	+	19	52
-	+	20	53
-	+	25	100
-	+	64	42
-	+	65	45
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/models/featuredads.php
-	"	124	60
-
-> /private/tmp/crontab.qZw8lKhICi
-	"	3	41
-	^	2	42
-	.	2	41
-	+	2	10
-	+	1	0
-	+	2	41
-
-> ~/bin/dbd
+> ~/bin/reset-dates.sh
 	"	1	8
 	^	1	9
 	.	1	8
-	+	1	32
-	+	1	2
+	+	2	0
 	+	3	0
 	+	1	8
 
-> /private/tmp/crontab.inNp2rG5kZ
-	"	1	15
+> ~/f
+	"	1	61
+	.	2	0
+	+	1	0
+	+	1	19
+	+	1	18
+	+	1	38
+	+	1	63
+	+	1	101
+	+	1	125
+	+	1	147
+	+	1	170
+	+	1	191
+	+	1	215
+	+	1	238
+	+	1	264
+	+	1	284
+	+	1	303
+	+	1	321
+	+	1	343
+	+	1	363
+	+	1	385
+	+	1	404
+	+	1	427
+	+	1	446
+	+	1	465
+	+	1	484
+	+	1	505
+	+	1	527
+	+	1	550
+	+	1	569
+	+	1	588
+	+	1	680
+	+	1	770
+	+	1	827
+	+	1	892
+	+	1	958
+	+	1	1021
+	+	2	0
 
-> /private/tmp/crontab.qK7vKxC9iV
+> ~/33
 	"	1	0
+	.	2	0
+	+	1	0
+	+	1	10
+	+	1	18
+	+	1	27
+	+	1	34
+	+	1	44
+	+	1	53
+	+	1	65
+	+	1	71
+	+	1	76
+	+	1	80
+	+	1	88
+	+	1	94
+	+	1	102
+	+	1	107
+	+	1	116
+	+	1	121
+	+	1	126
+	+	1	131
+	+	1	138
+	+	1	146
+	+	1	155
+	+	1	160
+	+	1	165
+	+	1	184
+	+	1	197
+	+	1	215
+	+	1	220
+	+	1	225
+	+	1	238
+	+	1	249
+	+	1	262
+	+	1	278
+	+	1	287
+	+	1	296
+	+	1	301
+	+	1	308
+	+	1	317
+	+	1	325
+	+	1	334
+	+	1	342
+	+	1	346
+	+	2	0
 
-> ~/coord
-	"	7	49
-	^	7	50
-	.	7	49
-	+	7	49
+> ~/macports/var/macports/build/_Users_ivankruchkoff_macports_var_macports_sources_rsync.macports.org_release_ports_devel_ncursesw/work/ncurses-5.7/configure
+	"	4767	7
+	.	4767	7
+	+	4767	7
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/NERD_tree_1
+> /private/tmp/crontab.qwUdpcyos7
+	"	3	70
+	^	3	71
+	.	3	70
+	+	3	70
+
+> ~/macports/var/macports/build/_Users_ivankruchkoff_macports_var_macports_sources_rsync.macports.org_release_ports_devel_ncursesw/work/ncurses-5.7/test/Makefile
+	"	1	0
+	.	106	13
+	+	91	12
+	+	106	13
+
+> ~/macports/var/macports/build/_Users_ivankruchkoff_macports_var_macports_sources_rsync.macports.org_release_ports_devel_ncursesw/work/ncurses-5.7/Makefile
+	"	44	0
+	^	36	37
+	.	36	0
+	+	40	0
+	+	38	0
+	+	40	0
+	+	38	8
+	+	39	9
+	+	1	0
+	+	101	39
+	+	102	0
+	+	102	13
+	+	102	277
+	+	102	0
+	+	36	0
+
+> ~/macports/var/macports/sources/rsync.macports.org/release/ports/PortIndex
+	"	379	7
+
+> ~/macports/etc/macports/macports.conf
+	"	25	16
+
+> ~/install
 	"	1	0
 	.	1	0
+	+	1	4
+	+	31	41
+	+	76	33
+	+	86	44
+	+	1	0
+	+	1	10
+	+	1	10
+	+	1	21
 	+	1	0
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/NERD_tree_2
-	"	6	0
-	.	1	0
+> ~/macports/var/macports/port-help.tcl
+	"	1	0
+
+> ~/macports/var/macports/sources/rsync.macports.org/release/ports/devel/ncursesw/Portfile
+	"	27	0
+
+> ~/macports/var/macports/build/_Users_ivankruchkoff_macports_var_macports_sources_rsync.macports.org_release_ports_devel_ncursesw/work/ncurses-5.7/Makefile.in
+	"	81	0
+
+> ~/macports/var/macports/logs/_Users_ivankruchkoff_macports_var_macports_sources_rsync.macports.org_release_ports_devel_ncursesw/main.log
+	"	33	32
+
+> ~/macports/var/macports/build/_Users_ivankruchkoff_macports_var_macports_sources_rsync.macports.org_release_ports_devel_ncursesw/work/ncurses-5.7/config
+	"	1	0
+
+> ~/.bashrc
+	"	27	85
+	^	47	15
+	.	27	85
+	+	37	21
+	+	30	16
+	+	55	23
+	+	60	39
+	+	76	0
+	+	59	0
+	+	75	18
+	+	76	0
+	+	36	12
+	+	35	0
+	+	36	61
+	+	37	8
+	+	36	0
+	+	37	9
+	+	31	24
+	+	47	14
+	+	37	0
+	+	35	0
+	+	27	85
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/deleteprofile.php
+	"	51	86
+	^	80	18
+	.	80	30
+	+	39	0
+	+	41	37
+	+	50	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	71
+	+	53	23
+	+	53	54
+	+	53	32
+	+	53	102
+	+	53	80
+	+	53	0
+	+	53	0
+	+	53	0
+	+	46	69
+	+	37	0
+	+	53	47
+	+	57	0
+	+	54	76
+	+	70	0
+	+	69	38
+	+	71	28
+	+	80	33
+	+	80	85
+	+	82	40
+	+	82	0
+	+	39	17
+	+	39	15
+	+	65	8
+	+	39	0
+	+	41	0
+	+	37	8
+	+	37	0
+	+	27	37
+	+	37	0
+	+	37	0
+	+	26	0
+	+	27	0
+	+	37	22
+	+	37	0
+	+	27	38
+	+	37	10
+	+	37	10
+	+	28	8
+	+	37	0
+	+	30	0
+	+	37	0
+	+	37	0
+	+	37	0
+	+	37	0
+	+	38	38
+	+	71	36
+	+	73	24
+	+	76	0
+	+	72	34
+	+	37	35
+	+	38	0
+	+	80	10
+	+	74	11
+	+	74	76
+	+	80	40
+	+	78	30
+	+	76	9
+	+	78	57
+	+	77	40
+	+	80	10
+	+	79	24
+	+	60	82
+	+	61	70
+	+	42	65
+	+	43	0
+	+	62	0
+	+	52	0
+	+	53	17
+	+	53	33
+	+	53	42
+	+	53	69
+	+	53	31
+	+	53	0
+	+	53	0
+	+	37	23
+	+	38	0
+	+	53	0
+	+	53	75
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	55	0
+	+	56	54
+	+	53	0
+	+	37	0
+	+	38	0
+	+	80	17
+	+	81	0
+	+	80	30
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/deleteprofile.js
+	"	5	7
+	^	17	27
+	.	5	0
 	+	1	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/Rest.php
-	"	60	12
-	.	60	0
-	+	61	21
-	+	61	0
-	+	61	0
-	+	60	0
-	+	60	0
-
-> ~/macports/apache2/conf/httpd.conf
-	"	119	0
-	^	119	38
-	.	119	0
-	+	40	10
-	+	131	0
-	+	132	0
-	+	154	39
-	+	163	28
-	+	40	20
-	+	91	0
-	+	163	0
-	+	40	27
-	+	41	13
-	+	42	26
-	+	466	0
-	+	385	0
-	+	386	0
-	+	385	0
-	+	388	0
-	+	119	37
-	+	120	0
-	+	119	0
-	o	40	20
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/hostname.php
-	"	17	4
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/__Tag_List__
-	"	11	20
-	.	12	0
-	+	13	0
-	+	13	0
-	+	12	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/libraries/Log.php
-	"	31	7
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/dev_config.php
-	"	13	21
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/MY_Exceptions.php
-	"	3	36
-	.	8	0
-	+	8	0
-
-> ~/macports/apache2/webpres.adperfect.com-trunk/.htaccess
-	"	3	0
-	.	4	0
-	+	3	36
+	+	1	0
+	+	1	0
+	+	1	0
+	+	18	0
+	+	18	27
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	20
+	+	18	20
+	+	18	0
+	+	18	0
+	+	18	0
+	+	17	0
+	+	18	20
+	+	18	0
+	+	18	0
+	+	1	0
+	+	18	0
+	+	18	0
+	+	2	0
 	+	4	0
-
-> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/index.php
-	"	16	0
-
-> /Volumes/DEV Ivan Kruchkoff/publishers.revinet.com/sites/publishers.revinet.com-trunk/index.
-	"	1	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/libraries/MY_Controller.php
-	"	157	46
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/config.po
-	"	1	0
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/config/host_config.php
-	"	43	1
-
-> /Volumes/DEV Ivan Kruchkoff/webpres.adperfect.com/system/application/models/hostname.php
-	"	17	0
-
-> ~/macports/apache2/publishers.revinet.com-trunk/index.php
-	"	69	13
+	+	15	0
+	+	15	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	4
+	+	18	7
+	+	18	4
+	+	18	7
+	+	18	12
+	+	18	11
+	+	18	3
+	+	18	8
+	+	18	0
+	+	18	12
+	+	18	0
+	+	18	0
+	+	18	0
+	+	18	12
+	+	18	7
+	+	18	7
+	+	18	0
+	+	2	21
+	+	18	25
+	+	18	21
+	+	18	0
+	+	15	0
+	+	18	0
+	+	20	20
+	+	15	0
+	+	15	0
+	+	15	0
+	+	5	16
+	+	15	49
+	+	3	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	15	38
+	+	2	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	15	66
+	+	15	0
+	+	15	0
+	+	15	0
+	+	17	0
+	+	17	0
+	+	15	0
+	+	15	0
+	+	18	0
+	+	17	36
+	+	18	9
+	+	20	0
+	+	18	0
+	+	18	0
+	+	18	0
+	+	8	40
+	+	9	28
+	+	21	3
+	+	22	0
+	+	22	4
+	+	22	0
+	+	22	0
+	+	22	37
+	+	22	15
+	+	17	21
+	+	20	0
+	+	22	0
+	+	9	0
+	+	22	0
+	+	19	20
+	+	17	27
+	+	5	0
 
 > ~/macports/apache2/webpres.adperfect.com-trunk/system/application/config/dev_config.php
-	"	15	0
+	"	17	34
+	^	14	33
+	.	14	0
+	+	14	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/topads.php
+	"	104	47
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/results.php
+	"	587	29
+
+> ~/macports/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/canto/canto.py
+	"	538	53
+
+> ~/macports/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/canto/canto_fetch.py
+	"	29	0
+
+> ~/.canto/conf
+	"	5	0
+	.	6	0
+	+	4	0
+	+	6	0
+	+	4	138
+	+	5	0
+	+	6	0
+
+> /private/tmp/crontab.UkaIAkfwcZ
+	"	3	9
+	^	3	10
+	.	3	9
+	+	3	45
+	+	4	0
+	+	3	9
+
+> ~/macports/Library/Frameworks/Python.framework/Versions/2.6/bin/canto-fetch
+	"	1	0
+
+> ~/macports/bin/canto-fetch-2.6
+	"	6	2
+
+> ~/macports/bin/canto
+	"	1	0
+
+> ~/.screenrc
+	"	37	0
+	^	40	46
+	.	40	45
+	+	103	0
+	+	36	65
+	+	21	20
+	+	14	53
+	+	15	16
+	+	16	48
+	+	17	23
+	+	19	0
+	+	21	14
+	+	19	23
+	+	18	46
+	+	19	50
+	+	20	4
+	+	19	66
+	+	20	0
+	+	40	43
+	+	39	14
+	+	40	14
+	+	39	41
+	+	40	44
+	+	39	15
+	+	40	15
+	+	39	41
+	+	40	45
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/categorysearch.php
+	"	143	1
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/models/seonavigation.php
+	"	91	6
+
+> ~/Downloads/pmd-4.2.5/etc/xslt/cpdhtml.xslt
+	"	60	4
+	.	48	0
+	+	48	0
+
+> ~/Downloads/pmd-4.2.5/bin/1
+	"	17928	0
+
+> ~/Downloads/pmd-4.2.5/bin/cpd.sh
+	"	87	93
+	^	87	70
+	.	87	69
+	+	62	0
+	+	61	0
+	+	62	11
+	+	60	0
+	+	59	0
+	+	61	0
+	+	60	13
+	+	87	0
+	+	87	69
 
 > ~/macports/apache2/webpres.adperfect.com-trunk/system/application/NERD_tree_1
 	"	1	0
 	.	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
 > ~/macports/apache2/webpres.adperfect.com-trunk/system/application/NERD_tree_2
-	"	10	0
+	"	37	2
 	.	1	0
 	+	1	0
 
-> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/controllers/pageview.php
-	"	13	19
-	.	13	0
-	+	13	0
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/application/libraries/WP_Cache.php
+	"	3	0
+
+> ~/Downloads/mysql-proxy-0.8.1-osx10.6-x86-64bit/lib/mysql-proxy/lua/admin.lua
+	"	37	0
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/system/database/DB.php
+	"	27	42
+
+> ~/macports/apache2/webpres.adperfect.com-trunk/js/adslist.js
+	"	3	134
+	^	9	20
+	.	3	132
+	+	25	44
+	+	25	0
+	+	25	29
+	+	25	12
+	+	25	18
+	+	25	17
+	+	25	17
+	+	25	26
+	+	25	19
+	+	25	19
+	+	25	24
+	+	25	24
+	+	25	25
+	+	25	18
+	+	25	33
+	+	25	35
+	+	25	0
+	+	25	0
+	+	25	26
+	+	25	27
+	+	25	18
+	+	25	18
+	+	25	18
+	+	25	19
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	56
+	+	25	0
+	+	38	16
+	+	38	58
+	+	38	85
+	+	38	0
+	+	38	129
+	+	38	14
+	+	38	105
+	+	38	35
+	+	38	25
+	+	38	0
+	+	25	53
+	+	31	27
+	+	25	0
+	+	12	0
+	+	25	0
+	+	25	1
+	+	25	1
+	+	15	0
+	+	15	22
+	+	17	34
+	+	18	22
+	+	19	0
+	+	18	41
+	+	19	59
+	+	20	12
+	+	15	0
+	+	25	0
+	+	12	0
+	+	9	16
+	+	9	18
+	+	10	0
+	+	12	0
+	+	23	0
+	+	9	0
+	+	10	0
+	+	9	0
+	+	13	17
+	+	10	0
+	+	7	21
+	+	9	22
+	+	7	19
+	+	9	19
+	+	12	0
+	+	9	27
+	+	8	19
+	+	9	28
+	+	12	0
+	+	25	0
+	+	23	3
+	+	12	0
+	+	12	0
+	+	38	0
+	+	1	0
+	+	4	1
+	+	1	14
+	+	3	0
+	+	1	0
+	+	3	78
+	+	3	111
+	+	3	111
+	+	38	0
+	+	12	4
+	+	12	0
+	+	11	0
+	+	7	0
+	+	3	166
+	+	3	0
+	+	9	0
+	+	3	132

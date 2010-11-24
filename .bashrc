@@ -24,16 +24,16 @@ PS1='[$newPWD]$ '
 export VIM_CRONTAB=true
 # export PERL5LIB=${PERL5LIB}:~/perl5lib/lib:~/lib/perl5:~/perl5lib/lib/darwin-2level:~/lib/perl5/site_perl
 # export MANPATH=~/perl5lib
-PATH=$HOME/bin:$HOME/macports/bin:$HOME/macports/sbin:$HOME/macports/apache2/bin:$PATH:/Users/berniedavid/php/bin:/Users/berniedavid/
+PATH=$HOME/bin:$HOME/macports/bin:$HOME/macports/sbin:$HOME/macports/apache2/bin:$PATH
 export MANPATH=$HOME/macports/man:$MANPATH
 export PERL5LIB=$HOME/macports/lib/perl5/5.8.8:$HOME/macports/lib/perl5/vendor_perl/5.8.8:$HOME/lib/perl5:$PERL5LIB
 export PAGER=most
+export EDITOR=`which vim`
 # PERLDOC_PAGER='less -r -f -+C'
 alias l='ls -laF'
 alias r='fc -s'
-# alias rr='cd ~/revinet/publishers.revinet.com/sites/publishers.revinet.com/system/application/'
+alias rr='cd ~/revinet/publishers.revinet.com/sites/publishers.revinet.com/system/application/'
 alias wp='cd /Users/ivankruchkoff/webpres/system/application'
-alias rr='cd /Users/ivankruchkoff/webpres/system/application'
 alias re='cd ~/revify'
 alias rc='cd ~/apps/test_revinet/cruisecontrol-bin-2.8.3/'
 alias rt='cd ~/apps/test_revinet/cruisecontrol-bin-2.8.3/projects/revinet/tests'
@@ -44,6 +44,7 @@ alias chmox='chmod +x'
 alias yc='java -jar ~/bin/yuicompressor-2.4.2.jar'
 alias gc='java -jar ~/bin/compiler.jar'
 alias ru='aspell -l ru dump master|aspell -l ru expand |less'
+alias vim='mvim'
 set -o vi
 # cd aliases
 alias ..='cd ..'

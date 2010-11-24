@@ -11,11 +11,14 @@ nonblock on
 vbell off
 msgwait 10
 
-chdir /Users/ivankruchkoff/revinet/publishers.revinet.com/sites/publishers.revinet.com/system/application
-screen -t revinet 1
-chdir /Users/ivankruchkoff/revify
-screen -t revify 2
-chdir 
+chdir /Users/ivankruchkoff/webpres/system/application
+screen -t webpres 1
+chdir /Users/ivankruchkoff/macports/apache2/logs
+screen -t apachelogs 2 tail -f webroot_8000-error_log
+chdir /Users/ivankruchkoff/webpres/system/logs
+screen -t wplogs 3 /Users/ivankruchkoff/bin/latest-webpres-logs.sh
+chdir
+screen -t rss 4 canto
 
 bind = resize =
 bind + resize +1
@@ -33,6 +36,8 @@ bind q remove
 bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
 
 escape \140\140 # ` instead of ^a for command
+bindkey -d -k k5 escape ^O^O # bound to F5
+bindkey -d -k k6 escape \140\140 # bound to F6
 
 #  make life easier, f1-f10 selects screens 0-9
 #  bindkey -k k1 select 1

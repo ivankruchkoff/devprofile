@@ -320,3 +320,17 @@ set guifont=Inconsolata:h18
 noremap <silent><Leader>q :shell<CR>
 nnoremap <silent> <F3> :Grep<CR> 
 nmap . .`[
+
+nmap <F1> <Esc> 
+nmap <F2> <ESC>:call SaveAndQuit()<CR>
+nmap <F4> <ESC>:vsplit<CR> 
+nmap <F5> <ESC>:split<CR>
+" F6 sets all split files to vertical
+nmap <F6> <ESC><c-w>t<c-w>K<CR> 
+" F7 sets all split files to horizontal
+nmap <F7> <ESC><c-w>t<c-w>H<CR>
+
+function SaveAndQuit()
+    mksession! ~/sessions/Session.vim
+    wqa
+endfunction
